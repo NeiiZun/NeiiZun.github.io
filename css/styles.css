@@ -1,150 +1,175 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,80);
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  margin: 0;
-  color: white;
   font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden;
+  background-color: #212529;
+  color: white;
+  margin-bottom: 180px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  background-color: #450D37;
+  padding: 10px;
+  border-radius: 20px;
+  border: black;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.button:hover {
+  background-color: #23061C;
 }
 
 header {
-  z-index: 2;
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  padding: 0;
-  background: red;
-  overflow: hidden;
-  background: #577fa4;
-  background: linear-gradient(150deg, #577fa4 29%, #576ea4 100%);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 9px 10px 9px;
-          box-shadow: rgba(0, 0, 0, 0.16) 9px 10px 9px;
+  padding-bottom: 100px;
 }
 
-header .centered-block {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1%;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  background-color: #1A1B1D;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.52);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.52);
+}
+
+header nav .container .text {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 33px;
+}
+
+.container {
   text-align: center;
 }
 
-header h1 {
-  font-size: 96px;
-  text-shadow: rgba(0, 0, 0, 0.16) 9px 10px 9px;
+.container .title {
+  font-size: 92px;
 }
 
-header p {
-  font-size: 29px;
-  text-shadow: rgba(0, 0, 0, 0.16) 9px 10px 9px;
+.container .subtitle {
+  font-size: 41px;
+  font-weight: normal;
 }
 
-header .lineboxes {
-  position: relative;
-  left: 70px;
+.container .line {
+  height: 10px;
+  width: 40%;
+  margin: 10px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #F25B5B;
 }
 
-header .lineboxes .linebox {
-  height: 15px;
-  width: 201px;
-  background: #FB7272;
-  border-radius: 20px;
-  margin-bottom: 10px;
-}
-
-.more {
-  position: relative;
-  overflow: hidden;
-  background: #576ea4;
-  z-index: 1;
-  padding-bottom: 10vh;
-  padding-top: 10vw;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 9px 10px 9px;
-          box-shadow: rgba(0, 0, 0, 0.16) 9px 10px 9px;
-}
-
-.text-block {
-  padding: 2vw;
-  text-align: center;
-}
-
-.text-block p {
-  margin-top: 1vw;
-  max-width: 80vw;
+.container p {
+  margin-top: 30px;
+  max-width: 60vw;
   margin-left: auto;
   margin-right: auto;
+  font-size: 26px;
 }
 
-.card {
-  background: #72A0C1;
-  padding: 50px;
-  max-width: 20vw;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 9px 10px 9px;
-          box-shadow: rgba(0, 0, 0, 0.16) 9px 10px 9px;
-  border-radius: 30px;
-  margin: 10px;
+.container .link {
+  text-align: justify;
+}
+
+.container .link .icon {
+  fill: white;
+  width: 46px;
+  height: 46px;
   display: inline-block;
 }
 
-.card .title {
-  position: relative;
-  top: -30px;
-  left: -60px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background: white;
-  height: 30px;
-  border-radius: 10px;
-  max-width: 100px;
-  height: auto;
-  color: black;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 9px 10px 9px;
-          box-shadow: rgba(0, 0, 0, 0.16) 9px 10px 9px;
-}
-
-.card .title span {
-  position: relative;
-}
-
-.card p {
-  position: relative;
-  max-width: 20vw;
-  text-align: left;
-}
-
-.card h1 {
-  text-align: left;
-}
-
-button {
-  background-color: #72A0C1;
-  border-radius: 28px;
-  border: 1px solid #4e88b1;
+.container .link p {
   display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 17px;
-  padding: 16px 31px;
-  text-decoration: none;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 9px 10px 9px;
-          box-shadow: rgba(0, 0, 0, 0.16) 9px 10px 9px;
-}
-
-button:hover {
-  background-color: #3e6d8e;
-  border: 1px solid #2f506a;
 }
 
 footer {
-  position: relative;
-  background: linear-gradient(150deg, #577fa4 29%, #576ea4 100%);
+  position: fixed;
+  background-color: #1A1B1D;
   width: 100vw;
-  padding: 3vw;
-  text-align: center;
-  font-size: 1vw;
-  z-index: 0;
+  height: auto;
+  padding: 20px;
+  bottom: 0;
+  left: 0;
+}
+
+footer .container .contant a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+footer .container .contant a:hover {
+  color: purple;
+}
+
+.cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #1A1B1D;
+}
+
+.card p {
+  max-width: 500px;
+}
+
+.card .illustration {
+  display: -ms-grid;
+  display: grid;
+  fill: white;
+  position: relative;
+  height: 80px;
+  width: 80px;
+  margin-bottom: 30px;
+}
+
+.card .title {
+  font-size: 30px;
 }
 /*# sourceMappingURL=styles.css.map */
