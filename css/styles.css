@@ -35,32 +35,64 @@ header {
 }
 
 header nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 1%;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  height: 80px;
+  width: 100%;
   background-color: #1A1B1D;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.52);
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.52);
-  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.52);
 }
 
-header nav .container .text {
+header nav .logo {
+  margin-left: 20px;
   text-decoration: none;
   color: white;
   font-weight: bold;
   font-size: 33px;
+  line-height: 80px;
+  padding-top: 0 100px;
+}
+
+header nav #check {
+  display: none;
+}
+
+header nav .more {
+  height: 30px;
+  width: 30px;
+  float: right;
+  margin-top: 25px;
+  margin-right: 30px;
+  display: none;
+}
+
+header nav ul {
+  float: right;
+  margin-right: 10px;
+}
+
+header nav ul li {
+  text-decoration: none;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+header nav ul li a {
+  color: gray;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .container {
   text-align: center;
+}
+
+.container h1 {
+  font-size: 50px;
 }
 
 .container .title {
@@ -83,10 +115,10 @@ header nav .container .text {
 
 .container p {
   margin-top: 30px;
-  max-width: 60vw;
+  max-width: 2000px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .container .link {
@@ -114,7 +146,12 @@ footer {
   left: 0;
 }
 
-footer .container .contant a {
+footer .container h1 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+footer .container .links a {
   text-decoration: none;
   color: white;
   margin-left: 20px;
@@ -122,7 +159,7 @@ footer .container .contant a {
           transition-duration: 1s;
 }
 
-footer .container .contant a:hover {
+footer .container .links a:hover {
   color: purple;
 }
 
@@ -169,7 +206,55 @@ footer .container .contant a:hover {
   margin-bottom: 30px;
 }
 
-.card .title {
+.card .illustration-image {
+  display: -ms-grid;
+  display: grid;
+  fill: white;
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 30px;
+  border-radius: 100px;
+}
+
+.card h1 {
   font-size: 30px;
+}
+
+@media (max-width: 952px) {
+  header nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  header nav .more {
+    display: block;
+  }
+  header nav ul {
+    padding: 10px;
+    width: 100%;
+    background: #1A1B1D;
+    margin-right: 100%;
+    -webkit-transition: all;
+    transition: all;
+    text-align: center;
+    -webkit-transition: .5s;
+    transition: .5s;
+    margin-bottom: 0;
+  }
+  header nav ul li {
+    display: block;
+  }
+  header nav ul li a.active, header nav ul li a:hover {
+    background: none;
+    color: white;
+  }
+  header nav #check:checked ~ ul {
+    -webkit-transition: .5s;
+    transition: .5s;
+    margin-right: 0%;
+    margin-bottom: 50px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

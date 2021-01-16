@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <title>NeiiZun</title>
@@ -10,9 +10,18 @@
 <body>
     <header>
         <nav>
-            <div class="container">
-                <a href="/" alt="nav text" class="text">NeiiZun</a>
-            </div>
+            <input type="checkbox" id="check">
+            
+            <label for="check">
+                <img src="images/more.svg" alt="" class="more">
+            </label>
+
+            <label class="logo">NeiiZun</label>
+            <ul>
+                <li><a href="#services">Mes services</a></li>
+                <li><a href="#projects">Mes projets</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -20,39 +29,64 @@
         <h1 class="title">NeiiZun</h1>
         <h2 class="subtitle">Développeur JAVA, PYTHON et WEB</h2>
         <br>
-        <div class="down" ><a href="#bottom"><img src="images/down.svg" alt=""></a></div>
+        <div class="down"><a href="#bottom"><img src="images/down.svg" alt="Desendre en bas"></a></div>
         <p class="text">En cours d'écriture</p>
+        <br>
         <div class="line"></div>
         <br>
         <br>
-        <div class="cards-container">
-            <div class="card">
-                <img src="images/cube.svg" alt="" class="illustration">
-                <h1 class="title">Réalisation de plugins minecraft</h1>
-                <br>
-                <p>Je réalise différents plugins pour vos serveurs Minecraft à partir de 5€ et en fonction du temps que
-                    je vais passer dessus.</p>
-                <br>
-                <a class="button" href="https://discord.gg/QNbFndSydf" target="_blank">Voir plus</a>
-            </div>
+        <div class="services">
+            <h1>Services</h1>
+            <br>
+            <br>
+            <div class="cards-container" id="services">
+                <div class="card">
+                    <img src="images/cube.svg" alt="" class="illustration">
+                    <h1>Réalisation de plugins minecraft</h1>
+                    <br>
+                    <p>Je réalise différents plugins pour vos serveurs Minecraft à partir de 5€ et en fonction du temps
+                        que
+                        je vais passer dessus.</p>
+                    <br>
+                    <a class="button" href="https://discord.gg/QNbFndSydf" target="_blank">Voir plus</a>
+                </div>
 
-            <div class="card">
-                <img src="images/page.svg" alt="" class="illustration">
-                <h1 class="title">Réalisation de sites web</h1>
-                <br>
-                <p>Je réalise différents site web (back end & front end) à partir de 10€ et en fonction du temps que je
-                    vais passer dessus.</p>
-                <br>
-                <a class="button" href="https://discord.gg/QNbFndSydf" target="_blank">Voir plus</a>
+                <div class="card">
+                    <img src="images/page.svg" alt="" class="illustration">
+                    <h1>Réalisation de sites web</h1>
+                    <br>
+                    <p>Je réalise différents site web (back end & front end) à partir de 10€ et en fonction du temps que
+                        je
+                        vais passer dessus.</p>
+                    <br>
+                    <a class="button" href="https://discord.gg/QNbFndSydf" target="_blank">Voir plus</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects" id="projects">
+            <br>
+            <h1>Projets</h1>
+            <br>
+            <br>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="images/castelys.jpg" alt="Logo projet castelys" class="illustration-image">
+                    <h1>Castelys</h1>
+                    <br>
+                    <p>Castelys est un serveur minecraft PVP faction moddé</p>
+                    <br>
+                    <a class="button" href="https://twitter.com/CastelysFR" target="_blank">Voir plus</a>
+                </div>
             </div>
         </div>
     </div>
 
     <footer>
         <div class="container">
-            <p>&copy; Copyright 2021 neiizun.me. All rights reserved</p>
+            <h1>&copy; Copyright 2021 neiizun.me. All rights reserved</h1>
             <br>
-            <ul class="contant">
+            <ul class="links">
                 <a href="https://twitter.com/NeiiZun" target="_blank">twitter</a>
                 <a href="https://discord.gg/QNbFndSydf" target="_blank">discord</a>
                 <a href="https://github.com/NeiiZun" target="_blank">github</a>
@@ -61,7 +95,6 @@
     </footer>
 
     <div id="bottom"></div>
-
 </body>
 
 </html>
