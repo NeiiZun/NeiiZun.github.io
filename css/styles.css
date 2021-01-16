@@ -221,13 +221,7 @@ footer .container .links a:hover {
   font-size: 30px;
 }
 
-@media (max-width: 952px) {
-  header nav ul li a {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 858px) {
+@media (max-width: 900px) {
   header nav .more {
     display: block;
   }
